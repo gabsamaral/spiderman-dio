@@ -7,15 +7,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spider Man | Multiverso</title>
   <link href="../../assets/css/internal.css" rel="stylesheet" type="text/css" />
+  <link href="../../assets/css/componentes/_galerry.css" rel="stylesheet"/>
+  <link href="../../assets/css/componentes/_link.button.css" rel="stylesheet"/>
+  <link href="../../assets/css/componentes/_navigator.css" rel="stylesheet"/>
+  <link href="../../assets/css/componentes/_pills.css"rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+
 </head>
 
 <body>
   <div class="s-wrapper">
-    <video autoplay loop>
+
+    <video autoplay loop muted>
       <source src="../../assets/videos/amazing-spiderman-2014-trailer.mp4" type="video/mp4" />
     </video>
 
-    <!--  Coluna da esquerda com menu (Left Column with menu)  -->
     <div class="s-left-column">
       <nav class="navigator">
         <div class="navigator__icon">
@@ -29,7 +35,7 @@
         </ul>
       </nav>
     </div>
-    <!-- FIM - Coluna da esquerda com menu (Left Column with menu)  -->
+    
 
     <div class="s-main-content">
       <div class="s-main-content__top">
@@ -41,24 +47,19 @@
         <div class="s-description">
           <div class="pills">
             <ul>
-              <li>Ano: 2002</li>
-              <li>Diretor: Sam Raimi</li>
+              <li>Ano: 2012</li>
+              <li>Diretor: Mark Webb</li>
             </ul>
           </div>
           <div class="s-description__text">
-            <p><strong>Sinopse:</strong>&nbsp;Depois de ser picado por uma aranha geneticamente modificada em uma
-              demonstração científica, o jovem nerd Peter Parker ganha superpoderes. Inicialmente, ele pretende usá-los
-              para para ganhar dinheiro, adotando o nome de Homem-Aranha e se apresentando em lutas de exibição. Porém,
-              ao presenciar o assassinando de seu tio Ben e sentir-se culpado, Peter decide não mais usar seus poderes
-              para proveito próprio e sim para enfrentar o mal, tendo como seu primeiro grande desafio o psicótico
-              Duende Verde.</p>
+            <p><strong>Sinopse:</strong>&nbsp;O Espetacular Homem-Aranha é a história de Peter Parker (Andrew Garfield), um estudante rejeitado por seus colegas e que foi abandonado por seus pais ainda criança, sendo então criado por seu Tio Ben (Martin Sheen) e pela Tia May (Sally Field.</p>
           </div>
         </div>
 
         <div class="s-links">
           <ul>
             <li>
-              <a href="https://www.youtube.com/watch?v=TYMMOjBUPMM" class="link-button" target="_blank">
+              <a href="https://www.youtube.com/watch?v=iAaDfqB9FLs" class="link-button" target="_blank">
                 <span class="icon">
                   <div class="play-icon">&nbsp;</div>
                 </span>
@@ -74,13 +75,28 @@
       <div class="s-main-content__bottom">
         <div class="gallery">
           <ul>
-            <li><a href="#"><img src="../../assets/images/spiderman-andrew/movie-01/gallery/image-01.png" alt=""></a></li>
-            <li><a href="#"><img src="../../assets/images/spiderman-andrew/movie-01/gallery/image-02.png" alt=""></a></li>
-            <li><a href="#"><img src="../../assets/images/spiderman-andrew/movie-01/gallery/image-03.png" alt=""></a></li>
-          </ul>
+            <li>
+              <a data-fancybox href="../../assets/images/spiderman-andrew/movie-01/gallery/image-01.png">
+                <img src="../../assets/images/spiderman-andrew/movie-01/gallery/image-01.png" alt="">
+              </a>
+            </li>
+            <li><a data-fancybox href="../../assets/images/spiderman-andrew/movie-01/gallery/image-02.png">
+              <img src="../../assets/images/spiderman-andrew/movie-01/gallery/image-02.png" alt="">
+            </a>
+          </li>
+            <li>
+              <a data-fancybox href="../../assets/images/spiderman-andrew/movie-01/gallery/image-03.png">
+              <img src="../../assets/images/spiderman-andrew/movie-01/gallery/image-03.png" alt="">
+            </a>
+          </li>
+         </ul>
         </div>
       </div>
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script>
+    //  JavaScript will go here
+  </script>
 </body>
 </html>
